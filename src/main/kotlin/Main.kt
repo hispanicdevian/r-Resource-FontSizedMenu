@@ -32,56 +32,52 @@ fun app() {
     Box(
         modifier = Modifier.fillMaxSize().background(color = Color.DarkGray)
     ) {
-        Column(
-
+        TopAppBar(
+            backgroundColor = Color.Black,
+            modifier = Modifier.fillMaxWidth()
         ) {
-
-            TopAppBar(
-                backgroundColor = Color.Black,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text(
-                    "Monotool Client",
-                    color = Color.White,
-                    fontWeight = FontWeight.Bold,
-                    style = TextStyle(fontSize = fontSized.value.sp),
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .wrapContentSize(Alignment.Center)
+            Text(
+                "Monotool Client",
+                color = Color.White,
+                fontWeight = FontWeight.Bold,
+                style = TextStyle(fontSize = fontSized.value.sp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .wrapContentSize(Alignment.Center)
+            )
+        }
+        Box(
+            modifier = Modifier.fillMaxSize().padding(top = 30.dp).padding(vertical = 100.dp)
+                .padding(horizontal = 250.dp)
+                .background(
+                    Color.Black, shape = AbsoluteRoundedCornerShape(8.dp)
                 )
-            }
-            Box(
-                modifier = Modifier.fillMaxSize().padding(top = 30.dp).padding(vertical = 100.dp)
-                    .padding(horizontal = 250.dp)
-                    .background(
-                        Color.Black, shape = AbsoluteRoundedCornerShape(8.dp)
-                    )
-                    .padding(5.dp)
-                    .size(300.dp)
-                    .background((Color.DarkGray), shape = AbsoluteRoundedCornerShape(5.dp)),
-                contentAlignment = Alignment.Center
+                .padding(5.dp)
+                .size(300.dp)
+                .background((Color.DarkGray), shape = AbsoluteRoundedCornerShape(5.dp)),
+            contentAlignment = Alignment.Center
+        ) {
+            val itemsList = listOf("Font A", "Font B", "Font C")
+            LazyColumn(
+                modifier = Modifier.fillMaxHeight(),
+                state = rememberLazyListState(),
+                verticalArrangement = Arrangement.Center
             ) {
-                val itemsList = listOf("Font A", "Font B", "Font C")
-                LazyColumn(
-                    modifier = Modifier.fillMaxHeight(),
-                    state = rememberLazyListState(),
-                    verticalArrangement = Arrangement.Center
-                ) {
-                    items(itemsList) { item ->
-                        Text(
-                            text = item,
-                            color = Color.White,
-                            modifier = Modifier
-                                .clickable {
-                                    fontSized =
-                                        fontSizeMap[item] ?: 20.sp // Default to 20 sp if item is not found in the map
-                                }
-                                .padding(16.dp)
-                                .fillMaxWidth(),
-                            textAlign = TextAlign.Center,
-                            style = TextStyle(fontSize = 30.sp)
-                        )
-                    }
+                items(itemsList) { item ->
+                    Text(
+                        text = item,
+                        color = Color.White,
+                        modifier = Modifier
+                            .clickable {
+                                fontSized =
+                                    fontSizeMap[item] ?: 20.sp // Default to 20 sp if item is not found in the map
+                            }
+                            .padding(16.dp)
+                            .fillMaxWidth(),
+                        textAlign = TextAlign.Center,
+                        style = TextStyle(fontSize = 30.sp)
+                    )
+
                 }
             }
         }
