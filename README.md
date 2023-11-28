@@ -1,2 +1,4 @@
 # r-Resource-FontSizedMenu
-resource purpose
+
+This is not an app
+only for resource and self reference purposes
