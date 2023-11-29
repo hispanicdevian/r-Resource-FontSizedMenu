@@ -23,13 +23,15 @@ import java.util.prefs.Preferences
 
 @Composable
 fun app() {
-    var fontSized by remember { mutableStateOf(20.sp) }
+    var fontSized by remember { mutableStateOf(loadFontSize().sp) }
+
 
     val fontSizeMap = mapOf(
         "Font A" to 25.sp,
         "Font B" to 30.sp,
         "Font C" to 35.sp
     )
+
 
     Box(
         modifier = Modifier.fillMaxSize().background(color = Color.DarkGray)
@@ -73,12 +75,16 @@ fun app() {
                             .clickable {
                                 fontSized =
                                     fontSizeMap[item] ?: 20.sp // Default to 20 sp if item is not found in the map
+                                saveFontSize(fontSized.value)
                             }
                             .padding(16.dp)
                             .fillMaxWidth(),
                         textAlign = TextAlign.Center,
                         style = TextStyle(fontSize = 30.sp)
                     )
+
+
+
 
                 }
             }
