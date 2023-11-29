@@ -98,7 +98,11 @@ fun main() = application {
     }
 }
 
-fun saveFontSize(fontSize: Float) {
+fun loadFontSize(): Float {
     val file = File("fontSize.txt")
-    file.writeText(fontSize.toString())
+    return if (file.exists()) {
+        file.readText().toFloat()
+    } else {
+        20.0f
+    }
 }
