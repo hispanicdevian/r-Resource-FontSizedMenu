@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d2ffb0-210e-4b61-9f5a-8d864ced8414" name="Changes" comment="adding save feature for font selection">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/FontSize(File).kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/FontSize(File).kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/FontSize(userRoot).kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/FontSize(userRoot).kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-    </list>
+    <list default="true" id="e9d2ffb0-210e-4b61-9f5a-8d864ced8414" name="Changes" comment="Two different options for saving Font Size settings" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,11 +99,28 @@
       <option name="project" value="LOCAL" />
       <updated>1701294753272</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding save feature for font selection">
+      <option name="closed" value="true" />
+      <created>1701297234614</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701297234614</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Two different options for saving Font Size settings">
+      <option name="closed" value="true" />
+      <created>1701297382895</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701297382895</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding save feature for font selection" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding save feature for font selection" />
+    <MESSAGE value="Two different options for saving Font Size settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Two different options for saving Font Size settings" />
   </component>
 </project>
