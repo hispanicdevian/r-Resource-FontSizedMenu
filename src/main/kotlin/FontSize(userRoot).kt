@@ -37,7 +37,7 @@ fun fontSizeV2(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(
-                "Monotool Client",
+                "Title Using fun FontSizeV2",
                 color = Color.White,
                 fontWeight = FontWeight.Bold,
                 style = TextStyle(fontSize = fontSized.value.sp),
@@ -88,5 +88,5 @@ fun saveFontSizeV2(fontSize: Float) {
 
 fun loadFontSizeV2(): Float {
     val prefs = Preferences.userRoot().node("FotSelected")
-    return prefs.getFloat("fontSize", 20.0f) // Default to 20.0f if no font size is found
+    return prefs.getFloat("fontSize", 20f) // Default to 20.0f if no font size is found
 }

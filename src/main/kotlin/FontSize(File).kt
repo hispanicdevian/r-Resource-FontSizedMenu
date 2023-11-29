@@ -38,7 +38,7 @@ fun fontSizeV1(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(
-                "Monotool Client",
+                "Title Using fun FontSizeV1",
                 color = Color.White,
                 fontWeight = FontWeight.Bold,
                 style = TextStyle(fontSize = fontSized.value.sp),
